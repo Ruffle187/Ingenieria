@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Compras</title>
+    </head>
+    <body>
+      {% for c in Compras %}
+        {{c.Persona}} - {{c.Producto}} - {{c.Fecha }} - {{p.Hora}} <br>
+      {% endfor %}
+    </body>
+</html>
