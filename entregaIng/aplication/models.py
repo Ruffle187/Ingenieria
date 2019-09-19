@@ -29,8 +29,8 @@ class Producto(models.Model):
 class Compra(models.Model):
     Persona = models.ForeignKey(Persona)
     Producto = models.ForeignKey(Producto)
-    fecha = models.DateField(_(u"Fecha de compra"), auto_now_add=True, blank=True)
-    hora = models.TimeField(_(u"Hora de compra"), auto_now_add=True, blank=True)
+    fecha = models.DateField( (u"Fecha de compra"), auto_now_add=True, blank=True)
+    hora = models.TimeField( (u"Hora de compra"), auto_now_add=True, blank=True)
 
     def __str__(self):
         return (self.Persona, self.Producto)

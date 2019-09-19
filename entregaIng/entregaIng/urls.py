@@ -12,4 +12,6 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^personas/',views.listarPersona),
+    url(r'^personas/',views.listarProducto),
+    url(r'^personas/',views.listarCompra),
 )

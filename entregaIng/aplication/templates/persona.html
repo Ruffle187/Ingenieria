@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Personas</title>
+    </head>
+    <body>
+      {% for p in Personas %}
+        {{p.Nombre}} - {{p.Apellido}} - {{p.Telefono }} - {{p.Email}} <br>
+      {% endfor %}
+    </body>
+</html>
