@@ -1,9 +1,16 @@
+{% load static %}
+
+
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
       <title>Personas</title>
     </head>
     <body>
+      <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
       {% for p in personas %}
         {{p.Nombre}} - {{p.Apellido}} - {{p.Telefono }} - {{p.Email}} <br>
       {% endfor %}
